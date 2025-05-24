@@ -9,6 +9,8 @@ services:
     numInstances: 1
     healthCheckPath: /
     envVars:
+      - key: PORT
+        value: "5678"
       - key: PGHOST
         fromDatabase:
           name: n8nDB
